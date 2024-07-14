@@ -8,10 +8,11 @@ import DemoEvent from "./components/DemoEvent";
 import DemoCss from "./components/DemoCss/DemoCss";
 import DemoState from "./components/DemoState/DemoState";
 import DemoStateCar from "./components/DemoState/DemoStateCar";
+import DemoProps from "./components/DemoProps/DemoProps";
+import DemoPhone from "./components/DemoProps/DemoPhone";
 
 function App() {
   const [count, setCount] = useState(0);
-
   return (
     <>
       <h1 className="text-red-300">SADKEK</h1>
@@ -22,21 +23,26 @@ function App() {
           <Content />
         </div>
         <Footer />
-        <h1>Render Shoes</h1>
+        <h1 className="font-bold text-4xl text-center py-5">Render Shoes</h1>
         <RenderShoes />
         <hr className="my-3" />
         <DemoEvent />
         <hr className="my-3" />
         <DemoCss />
         <hr className="my-3" />
-        <h1>Demo Sass</h1>
+        <h1 className="font-bold text-4xl text-center py-5">Demo Sass</h1>
         <h5 className="demo_sass">Hello BabyRed</h5>
         <hr className="my-3" />
-        <h1>Demo State</h1>
+        <h1 className="font-bold text-4xl text-center py-5">Demo State</h1>
         <DemoState />
         <hr className="my-3" />
-        <h1>Demo Car List</h1>
+        <h1 className="font-bold text-4xl text-center py-5">Demo Car List</h1>
         <DemoStateCar />
+        <hr className="my-3" />
+        <h1 className="font-bold text-4xl text-center py-5">Demo Props</h1>
+        <DemoProps />
+        <hr className="my-3" />
+        <DemoPhone />
       </div>
     </>
   );

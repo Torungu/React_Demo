@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
-const DemoStateCar = () => {
+const DemoStateCar = (props) => {
+  console.log(props.abc);
   let arrButton = [
     {
       icon: "/CarBasic/icons/icon-black.jpg",
@@ -32,7 +33,6 @@ const DemoStateCar = () => {
     <div>
       <div className="flex">
         <div className="w-2/3">
-          {/* <img src={`/public/CarBasic/products/${selectCar}`} alt="" /> */}
           <img src={`public/CarBasic/products/${selectCar}`} alt="" />
         </div>
         <div className="w-1/3">
